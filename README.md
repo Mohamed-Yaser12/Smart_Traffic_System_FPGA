@@ -31,6 +31,7 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 
 ## 🔌 Hardware Components Required
 * BASYS3 FPGA board
+  <img width="431" height="498" alt="Screenshot 2026-05-11 130005" src="https://github.com/user-attachments/assets/c3643406-ed67-4fdc-9958-6fce822bf1c2" />
 * 4x Ultrasonic sensors (HC-SR04)
 * DHT11 temperature sensor
 * 220V red/yellow/green LEDs (8 each)
@@ -54,5 +55,5 @@ The project architecture is divided into modular VHDL components:
 * Ahmed Tarek Husseini
 * Mohamed Mohsen Abu Ayyad
 * Hamza Sherif Mansour
-* Ahmed Hossam Badran<img width="431" height="498" alt="Screenshot 2026-05-11 130005" src="https://github.com/user-attachments/assets/c3643406-ed67-4fdc-9958-6fce822bf1c2" />
+* Ahmed Hossam Badran
 
