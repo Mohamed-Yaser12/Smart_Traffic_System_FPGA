@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MainTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MainTB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999997416fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000517fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/MainTB/Clk_tb" type="logic">
+      <obj_property name="ElementShortName">Clk_tb</obj_property>
+      <obj_property name="ObjectShortName">Clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Reset_tb" type="logic">
+      <obj_property name="ElementShortName">Reset_tb</obj_property>
+      <obj_property name="ObjectShortName">Reset_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Data_Line_tb" type="logic">
+      <obj_property name="ElementShortName">Data_Line_tb</obj_property>
+      <obj_property name="ObjectShortName">Data_Line_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Echo_1_tb" type="logic">
+      <obj_property name="ElementShortName">Echo_1_tb</obj_property>
+      <obj_property name="ObjectShortName">Echo_1_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Echo_2_tb" type="logic">
+      <obj_property name="ElementShortName">Echo_2_tb</obj_property>
+      <obj_property name="ObjectShortName">Echo_2_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Echo_3_tb" type="logic">
+      <obj_property name="ElementShortName">Echo_3_tb</obj_property>
+      <obj_property name="ObjectShortName">Echo_3_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Echo_4_tb" type="logic">
+      <obj_property name="ElementShortName">Echo_4_tb</obj_property>
+      <obj_property name="ObjectShortName">Echo_4_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Trig_1_tb" type="logic">
+      <obj_property name="ElementShortName">Trig_1_tb</obj_property>
+      <obj_property name="ObjectShortName">Trig_1_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Trig_2_tb" type="logic">
+      <obj_property name="ElementShortName">Trig_2_tb</obj_property>
+      <obj_property name="ObjectShortName">Trig_2_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Trig_3_tb" type="logic">
+      <obj_property name="ElementShortName">Trig_3_tb</obj_property>
+      <obj_property name="ObjectShortName">Trig_3_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Trig_4_tb" type="logic">
+      <obj_property name="ElementShortName">Trig_4_tb</obj_property>
+      <obj_property name="ObjectShortName">Trig_4_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Alarm_tb" type="logic">
+      <obj_property name="ElementShortName">Alarm_tb</obj_property>
+      <obj_property name="ObjectShortName">Alarm_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Start_tb" type="logic">
+      <obj_property name="ElementShortName">Start_tb</obj_property>
+      <obj_property name="ObjectShortName">Start_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/BASYS_LED_tb" type="logic">
+      <obj_property name="ElementShortName">BASYS_LED_tb</obj_property>
+      <obj_property name="ObjectShortName">BASYS_LED_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/RED_Vertical_tb" type="logic">
+      <obj_property name="ElementShortName">RED_Vertical_tb</obj_property>
+      <obj_property name="ObjectShortName">RED_Vertical_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Yellow_Vertical_tb" type="logic">
+      <obj_property name="ElementShortName">Yellow_Vertical_tb</obj_property>
+      <obj_property name="ObjectShortName">Yellow_Vertical_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Green_Vertical_tb" type="logic">
+      <obj_property name="ElementShortName">Green_Vertical_tb</obj_property>
+      <obj_property name="ObjectShortName">Green_Vertical_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/RED_Horizontal_tb" type="logic">
+      <obj_property name="ElementShortName">RED_Horizontal_tb</obj_property>
+      <obj_property name="ObjectShortName">RED_Horizontal_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Yellow_Horizontal_tb" type="logic">
+      <obj_property name="ElementShortName">Yellow_Horizontal_tb</obj_property>
+      <obj_property name="ObjectShortName">Yellow_Horizontal_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Green_Horizontal_tb" type="logic">
+      <obj_property name="ElementShortName">Green_Horizontal_tb</obj_property>
+      <obj_property name="ObjectShortName">Green_Horizontal_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Anodes_tb" type="array">
+      <obj_property name="ElementShortName">Anodes_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Anodes_tb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Segments_tb" type="array">
+      <obj_property name="ElementShortName">Segments_tb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Segments_tb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/Zero_tb" type="logic">
+      <obj_property name="ElementShortName">Zero_tb</obj_property>
+      <obj_property name="ObjectShortName">Zero_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MainTB/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>
