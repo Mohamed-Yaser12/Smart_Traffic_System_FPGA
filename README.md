@@ -11,6 +11,10 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 * The system controls four main vehicular traffic lights (Red, Yellow, Green) and four pedestrian-specific lights.
 * Traffic signals are designed following the German Traffic System.
 * All signals are synchronized to avoid car-pedestrian conflict, with timed logic ensuring safe transitions (e.g., 10s green, 3s yellow).
+  
+### ⚡ Hardware & 220V Light Control
+* A 220V LED system is used to simulate real-world traffic light conditions.
+* The FPGA handles the low-voltage control logic, which safely interfaces with the 220V vehicle and pedestrian lights via a 2-channel 4x relay module.
 
 ### 📏 Violation Detection (Ultrasonic & Buzzer)
 * Four ultrasonic sensors (HC-SR04) are positioned at the intersection to detect vehicle presence and movement.
@@ -20,9 +24,7 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 * A DHT11 temperature sensor is integrated to monitor ambient environmental conditions.
 * Real-time temperature readings are displayed on the FPGA's 7-segment display, while an LCD display provides additional feedback on system status.
 
-### ⚡ Hardware & 220V Light Control
-* A 220V LED system is used to simulate real-world traffic light conditions.
-* The FPGA handles the low-voltage control logic, which safely interfaces with the 220V vehicle and pedestrian lights via a 2-channel 4x relay module.
+
 
 ## 🔌 Hardware Components Required
 * BASYS3 FPGA board
