@@ -1,0 +1,2257 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Mon Dec 09 23:09:06 2024
+| Host         : DESKTOP-DMGLRNH running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file Main_timing_summary_routed.rpt -rpx Main_timing_summary_routed.rpx
+| Design       : Main
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.16 2016-11-09
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 107 register/latch pins with no clock driven by root clock pin: Temp_Sensor/Clk_Reg_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Ultrasonic_Sensor/Detected_1_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Ultrasonic_Sensor/Detected_2_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Ultrasonic_Sensor/Detected_3_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: Ultrasonic_Sensor/Detected_4_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 283 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 23 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+    -15.055     -875.203                     60                  573        0.104        0.000                      0                  573        4.500        0.000                       0                   283  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin       -15.055     -875.203                     60                  573        0.104        0.000                      0                  573        4.500        0.000                       0                   283  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           60  Failing Endpoints,  Worst Slack      -15.055ns,  Total Violation     -875.203ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.104ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -15.055ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_23/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_2_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.980ns  (logic 14.287ns (57.193%)  route 10.693ns (42.807%))
+  Logic Levels:           32  (CARRY4=21 LUT1=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.833ns = ( 14.833 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.159ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.639     5.159    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X0Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_23/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y26          DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      4.009     9.168 f  Ultrasonic_Sensor/Distance_Measured_23/P[0]
+                         net (fo=19, routed)          0.544     9.712    Ultrasonic_Sensor/Distance_Measured_23_n_105
+    SLICE_X12Y65         LUT1 (Prop_lut1_I0_O)        0.124     9.836 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_213/O
+                         net (fo=1, routed)           0.520    10.356    Ultrasonic_Sensor/Distance_Measured_2[2]_i_213_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595    10.951 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178/CO[3]
+                         net (fo=1, routed)           0.000    10.951    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178_n_0
+    SLICE_X12Y67         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.266 f  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_140/O[3]
+                         net (fo=8, routed)           0.735    12.001    Ultrasonic_Sensor/Distance_Measured_23__0[8]
+    SLICE_X13Y69         LUT3 (Prop_lut3_I2_O)        0.307    12.308 f  Ultrasonic_Sensor/Distance_Measured_2[2]_i_82/O
+                         net (fo=13, routed)          0.868    13.176    Ultrasonic_Sensor/Distance_Measured_2[2]_i_82_n_0
+    SLICE_X11Y67         LUT6 (Prop_lut6_I5_O)        0.124    13.300 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_198/O
+                         net (fo=1, routed)           0.568    13.868    Ultrasonic_Sensor/Distance_Measured_2[2]_i_198_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    14.388 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.388    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.505 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.505    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116_n_0
+    SLICE_X10Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.622 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.622    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76_n_0
+    SLICE_X10Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.739 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.739    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40_n_0
+    SLICE_X10Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.856 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.856    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21_n_0
+    SLICE_X10Y71         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.013 r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.519    15.532    Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12_n_2
+    SLICE_X10Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.816    16.348 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.555    16.903    Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16_n_1
+    SLICE_X9Y73          CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.778    17.681 r  Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14/CO[2]
+                         net (fo=10, routed)          0.468    18.149    Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14_n_1
+    SLICE_X9Y72          LUT5 (Prop_lut5_I3_O)        0.313    18.462 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_14/O
+                         net (fo=2, routed)           0.166    18.627    Ultrasonic_Sensor/Distance_Measured_2[10]_i_14_n_0
+    SLICE_X9Y72          LUT5 (Prop_lut5_I4_O)        0.124    18.751 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_5/O
+                         net (fo=1, routed)           0.473    19.224    Ultrasonic_Sensor/Distance_Measured_2[10]_i_5_n_0
+    SLICE_X8Y71          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    19.771 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.692    20.463    Ultrasonic_Sensor_n_72
+    SLICE_X7Y69          LUT3 (Prop_lut3_I2_O)        0.301    20.764 r  Distance_Measured_2[0]_i_103/O
+                         net (fo=1, routed)           0.569    21.333    Distance_Measured_2[0]_i_103_n_0
+    SLICE_X6Y69          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    21.853 r  Distance_Measured_2_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    21.853    Distance_Measured_2_reg[0]_i_78_n_0
+    SLICE_X6Y70          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    22.072 r  Distance_Measured_2_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.600    22.672    Ultrasonic_Sensor/Distance_Measured_23_1[0]
+    SLICE_X4Y69          LUT3 (Prop_lut3_I1_O)        0.295    22.967 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_79/O
+                         net (fo=3, routed)           0.672    23.639    Ultrasonic_Sensor/Distance_Measured_2[0]_i_79_n_0
+    SLICE_X4Y69          LUT5 (Prop_lut5_I4_O)        0.124    23.763 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_50/O
+                         net (fo=1, routed)           0.546    24.308    Ultrasonic_Sensor/Distance_Measured_2[0]_i_50_n_0
+    SLICE_X5Y71          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    24.815 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28/CO[3]
+                         net (fo=1, routed)           0.000    24.815    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28_n_0
+    SLICE_X5Y72          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    25.149 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10/O[1]
+                         net (fo=3, routed)           0.367    25.516    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10_n_6
+    SLICE_X4Y72          LUT4 (Prop_lut4_I0_O)        0.303    25.819 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_40/O
+                         net (fo=1, routed)           0.475    26.294    Ultrasonic_Sensor/Distance_Measured_2[0]_i_40_n_0
+    SLICE_X3Y72          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    26.692 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.692    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19_n_0
+    SLICE_X3Y73          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.806 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.806    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7_n_0
+    SLICE_X3Y74          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.077 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.540    27.617    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4_n_3
+    SLICE_X4Y72          LUT5 (Prop_lut5_I1_O)        0.373    27.990 r  Ultrasonic_Sensor/Distance_Measured_2[4]_i_3/O
+                         net (fo=1, routed)           0.336    28.326    Ultrasonic_Sensor/Distance_Measured_2[4]_i_3_n_0
+    SLICE_X4Y73          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580    28.906 r  Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.906    Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2_n_0
+    SLICE_X4Y74          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    29.020 r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.009    29.029    Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2_n_0
+    SLICE_X4Y75          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    29.363 r  Ultrasonic_Sensor/Distance_Measured_2_reg[12]_i_2/O[1]
+                         net (fo=1, routed)           0.473    29.837    Ultrasonic_Sensor/Distance_Measured_21[10]
+    SLICE_X5Y76          LUT5 (Prop_lut5_I0_O)        0.303    30.140 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_1/O
+                         net (fo=1, routed)           0.000    30.140    Ultrasonic_Sensor/Distance_Measured_2[10]_i_1_n_0
+    SLICE_X5Y76          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.492    14.833    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X5Y76          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]/C
+                         clock pessimism              0.258    15.091    
+                         clock uncertainty           -0.035    15.056    
+    SLICE_X5Y76          FDRE (Setup_fdre_C_D)        0.029    15.085    Ultrasonic_Sensor/Distance_Measured_2_reg[10]
+  -------------------------------------------------------------------
+                         required time                         15.085    
+                         arrival time                         -30.140    
+  -------------------------------------------------------------------
+                         slack                                -15.055    
+
+Slack (VIOLATED) :        -15.010ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_43/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_4_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.864ns  (logic 14.011ns (56.351%)  route 10.853ns (43.649%))
+  Logic Levels:           35  (CARRY4=24 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.142ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.762ns = ( 14.762 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.161ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.641     5.161    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_43/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y26          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      4.009     9.170 f  Ultrasonic_Sensor/Distance_Measured_43/P[3]
+                         net (fo=10, routed)          0.903    10.073    Ultrasonic_Sensor/Distance_Measured_43_n_102
+    SLICE_X54Y66         LUT2 (Prop_lut2_I0_O)        0.124    10.197 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_56/O
+                         net (fo=1, routed)           0.000    10.197    Ultrasonic_Sensor/Distance_Measured_4[13]_i_56_n_0
+    SLICE_X54Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.730 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.730    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37_n_0
+    SLICE_X54Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.847 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.847    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23_n_0
+    SLICE_X54Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.964 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.964    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16_n_0
+    SLICE_X54Y69         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    11.218 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.881    12.099    Ultrasonic_Sensor/CO[0]
+    SLICE_X52Y67         LUT3 (Prop_lut3_I1_O)        0.367    12.466 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_79/O
+                         net (fo=13, routed)          0.773    13.239    Ultrasonic_Sensor/Distance_Measured_4[2]_i_79_n_0
+    SLICE_X52Y65         LUT6 (Prop_lut6_I0_O)        0.124    13.363 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_189/O
+                         net (fo=1, routed)           0.543    13.906    Ultrasonic_Sensor/Distance_Measured_4[2]_i_189_n_0
+    SLICE_X53Y67         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    14.304 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.304    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148_n_0
+    SLICE_X53Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.418 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.418    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156_n_0
+    SLICE_X53Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.532 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.532    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116_n_0
+    SLICE_X53Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.646 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.646    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76_n_0
+    SLICE_X53Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.760 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.760    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40_n_0
+    SLICE_X53Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.874 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.874    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21_n_0
+    SLICE_X53Y73         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.031 r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.380    15.411    Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12_n_2
+    SLICE_X52Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.224 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.382    16.606    Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16_n_1
+    SLICE_X52Y74         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.816    17.422 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14/O[1]
+                         net (fo=4, routed)           0.478    17.900    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14_n_6
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.306    18.206 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_18/O
+                         net (fo=2, routed)           0.682    18.887    Ultrasonic_Sensor/Distance_Measured_4[10]_i_18_n_0
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.124    19.011 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_6/O
+                         net (fo=1, routed)           0.473    19.484    Ultrasonic_Sensor/Distance_Measured_4[10]_i_6_n_0
+    SLICE_X50Y71         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.579    20.063 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.783    20.846    Ultrasonic_Sensor_n_18
+    SLICE_X52Y71         LUT3 (Prop_lut3_I1_O)        0.301    21.147 r  Distance_Measured_4[0]_i_101/O
+                         net (fo=1, routed)           0.533    21.681    Distance_Measured_4[0]_i_101_n_0
+    SLICE_X49Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    22.066 r  Distance_Measured_4_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    22.066    Distance_Measured_4_reg[0]_i_78_n_0
+    SLICE_X49Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    22.288 r  Distance_Measured_4_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.614    22.902    Ultrasonic_Sensor/Distance_Measured_43_1[0]
+    SLICE_X48Y70         LUT3 (Prop_lut3_I1_O)        0.299    23.201 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_79/O
+                         net (fo=3, routed)           0.411    23.612    Ultrasonic_Sensor/Distance_Measured_4[0]_i_79_n_0
+    SLICE_X47Y70         LUT5 (Prop_lut5_I4_O)        0.124    23.736 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_50/O
+                         net (fo=1, routed)           0.635    24.371    Ultrasonic_Sensor/Distance_Measured_4[0]_i_50_n_0
+    SLICE_X46Y71         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    24.918 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28/O[2]
+                         net (fo=3, routed)           0.455    25.373    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28_n_5
+    SLICE_X44Y71         LUT4 (Prop_lut4_I0_O)        0.301    25.674 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_63/O
+                         net (fo=1, routed)           0.622    26.296    Ultrasonic_Sensor/Distance_Measured_4[0]_i_63_n_0
+    SLICE_X45Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.681 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38/CO[3]
+                         net (fo=1, routed)           0.000    26.681    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38_n_0
+    SLICE_X45Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.795 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.795    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19_n_0
+    SLICE_X45Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.909 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.909    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7_n_0
+    SLICE_X45Y74         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.180 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.781    27.961    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4_n_3
+    SLICE_X47Y72         LUT5 (Prop_lut5_I1_O)        0.373    28.334 r  Ultrasonic_Sensor/Distance_Measured_4[4]_i_7/O
+                         net (fo=1, routed)           0.000    28.334    Ultrasonic_Sensor/Distance_Measured_4[4]_i_7_n_0
+    SLICE_X47Y72         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    28.866 r  Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.866    Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2_n_0
+    SLICE_X47Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    28.980 r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.980    Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2_n_0
+    SLICE_X47Y74         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    29.202 r  Ultrasonic_Sensor/Distance_Measured_4_reg[12]_i_2/O[0]
+                         net (fo=1, routed)           0.524    29.726    Ultrasonic_Sensor/Distance_Measured_41[9]
+    SLICE_X45Y75         LUT5 (Prop_lut5_I0_O)        0.299    30.025 r  Ultrasonic_Sensor/Distance_Measured_4[9]_i_1/O
+                         net (fo=1, routed)           0.000    30.025    Ultrasonic_Sensor/Distance_Measured_4[9]_i_1_n_0
+    SLICE_X45Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.421    14.762    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X45Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[9]/C
+                         clock pessimism              0.258    15.020    
+                         clock uncertainty           -0.035    14.985    
+    SLICE_X45Y75         FDRE (Setup_fdre_C_D)        0.031    15.016    Ultrasonic_Sensor/Distance_Measured_4_reg[9]
+  -------------------------------------------------------------------
+                         required time                         15.016    
+                         arrival time                         -30.025    
+  -------------------------------------------------------------------
+                         slack                                -15.010    
+
+Slack (VIOLATED) :        -14.966ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_43/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_4_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.823ns  (logic 14.031ns (56.524%)  route 10.792ns (43.476%))
+  Logic Levels:           35  (CARRY4=24 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.764ns = ( 14.764 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.161ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.641     5.161    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_43/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y26          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      4.009     9.170 f  Ultrasonic_Sensor/Distance_Measured_43/P[3]
+                         net (fo=10, routed)          0.903    10.073    Ultrasonic_Sensor/Distance_Measured_43_n_102
+    SLICE_X54Y66         LUT2 (Prop_lut2_I0_O)        0.124    10.197 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_56/O
+                         net (fo=1, routed)           0.000    10.197    Ultrasonic_Sensor/Distance_Measured_4[13]_i_56_n_0
+    SLICE_X54Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.730 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.730    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37_n_0
+    SLICE_X54Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.847 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.847    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23_n_0
+    SLICE_X54Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.964 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.964    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16_n_0
+    SLICE_X54Y69         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    11.218 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.881    12.099    Ultrasonic_Sensor/CO[0]
+    SLICE_X52Y67         LUT3 (Prop_lut3_I1_O)        0.367    12.466 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_79/O
+                         net (fo=13, routed)          0.773    13.239    Ultrasonic_Sensor/Distance_Measured_4[2]_i_79_n_0
+    SLICE_X52Y65         LUT6 (Prop_lut6_I0_O)        0.124    13.363 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_189/O
+                         net (fo=1, routed)           0.543    13.906    Ultrasonic_Sensor/Distance_Measured_4[2]_i_189_n_0
+    SLICE_X53Y67         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    14.304 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.304    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148_n_0
+    SLICE_X53Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.418 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.418    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156_n_0
+    SLICE_X53Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.532 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.532    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116_n_0
+    SLICE_X53Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.646 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.646    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76_n_0
+    SLICE_X53Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.760 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.760    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40_n_0
+    SLICE_X53Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.874 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.874    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21_n_0
+    SLICE_X53Y73         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.031 r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.380    15.411    Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12_n_2
+    SLICE_X52Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.224 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.382    16.606    Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16_n_1
+    SLICE_X52Y74         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.816    17.422 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14/O[1]
+                         net (fo=4, routed)           0.478    17.900    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14_n_6
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.306    18.206 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_18/O
+                         net (fo=2, routed)           0.682    18.887    Ultrasonic_Sensor/Distance_Measured_4[10]_i_18_n_0
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.124    19.011 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_6/O
+                         net (fo=1, routed)           0.473    19.484    Ultrasonic_Sensor/Distance_Measured_4[10]_i_6_n_0
+    SLICE_X50Y71         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.579    20.063 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.783    20.846    Ultrasonic_Sensor_n_18
+    SLICE_X52Y71         LUT3 (Prop_lut3_I1_O)        0.301    21.147 r  Distance_Measured_4[0]_i_101/O
+                         net (fo=1, routed)           0.533    21.681    Distance_Measured_4[0]_i_101_n_0
+    SLICE_X49Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    22.066 r  Distance_Measured_4_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    22.066    Distance_Measured_4_reg[0]_i_78_n_0
+    SLICE_X49Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    22.288 r  Distance_Measured_4_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.614    22.902    Ultrasonic_Sensor/Distance_Measured_43_1[0]
+    SLICE_X48Y70         LUT3 (Prop_lut3_I1_O)        0.299    23.201 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_79/O
+                         net (fo=3, routed)           0.411    23.612    Ultrasonic_Sensor/Distance_Measured_4[0]_i_79_n_0
+    SLICE_X47Y70         LUT5 (Prop_lut5_I4_O)        0.124    23.736 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_50/O
+                         net (fo=1, routed)           0.635    24.371    Ultrasonic_Sensor/Distance_Measured_4[0]_i_50_n_0
+    SLICE_X46Y71         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    24.918 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28/O[2]
+                         net (fo=3, routed)           0.455    25.373    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28_n_5
+    SLICE_X44Y71         LUT4 (Prop_lut4_I0_O)        0.301    25.674 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_63/O
+                         net (fo=1, routed)           0.622    26.296    Ultrasonic_Sensor/Distance_Measured_4[0]_i_63_n_0
+    SLICE_X45Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.681 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38/CO[3]
+                         net (fo=1, routed)           0.000    26.681    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38_n_0
+    SLICE_X45Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.795 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.795    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19_n_0
+    SLICE_X45Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.909 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.909    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7_n_0
+    SLICE_X45Y74         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.180 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.781    27.961    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4_n_3
+    SLICE_X47Y72         LUT5 (Prop_lut5_I1_O)        0.373    28.334 r  Ultrasonic_Sensor/Distance_Measured_4[4]_i_7/O
+                         net (fo=1, routed)           0.000    28.334    Ultrasonic_Sensor/Distance_Measured_4[4]_i_7_n_0
+    SLICE_X47Y72         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    28.866 r  Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.866    Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2_n_0
+    SLICE_X47Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    28.980 r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.980    Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2_n_0
+    SLICE_X47Y74         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    29.219 r  Ultrasonic_Sensor/Distance_Measured_4_reg[12]_i_2/O[2]
+                         net (fo=1, routed)           0.463    29.683    Ultrasonic_Sensor/Distance_Measured_41[11]
+    SLICE_X45Y76         LUT5 (Prop_lut5_I0_O)        0.302    29.985 r  Ultrasonic_Sensor/Distance_Measured_4[11]_i_1/O
+                         net (fo=1, routed)           0.000    29.985    Ultrasonic_Sensor/Distance_Measured_4[11]_i_1_n_0
+    SLICE_X45Y76         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.423    14.764    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X45Y76         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[11]/C
+                         clock pessimism              0.258    15.022    
+                         clock uncertainty           -0.035    14.987    
+    SLICE_X45Y76         FDRE (Setup_fdre_C_D)        0.032    15.019    Ultrasonic_Sensor/Distance_Measured_4_reg[11]
+  -------------------------------------------------------------------
+                         required time                         15.019    
+                         arrival time                         -29.985    
+  -------------------------------------------------------------------
+                         slack                                -14.966    
+
+Slack (VIOLATED) :        -14.966ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_23/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_2_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.889ns  (logic 14.173ns (56.945%)  route 10.716ns (43.055%))
+  Logic Levels:           31  (CARRY4=20 LUT1=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.831ns = ( 14.831 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.159ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.639     5.159    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X0Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_23/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y26          DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      4.009     9.168 f  Ultrasonic_Sensor/Distance_Measured_23/P[0]
+                         net (fo=19, routed)          0.544     9.712    Ultrasonic_Sensor/Distance_Measured_23_n_105
+    SLICE_X12Y65         LUT1 (Prop_lut1_I0_O)        0.124     9.836 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_213/O
+                         net (fo=1, routed)           0.520    10.356    Ultrasonic_Sensor/Distance_Measured_2[2]_i_213_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595    10.951 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178/CO[3]
+                         net (fo=1, routed)           0.000    10.951    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178_n_0
+    SLICE_X12Y67         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.266 f  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_140/O[3]
+                         net (fo=8, routed)           0.735    12.001    Ultrasonic_Sensor/Distance_Measured_23__0[8]
+    SLICE_X13Y69         LUT3 (Prop_lut3_I2_O)        0.307    12.308 f  Ultrasonic_Sensor/Distance_Measured_2[2]_i_82/O
+                         net (fo=13, routed)          0.868    13.176    Ultrasonic_Sensor/Distance_Measured_2[2]_i_82_n_0
+    SLICE_X11Y67         LUT6 (Prop_lut6_I5_O)        0.124    13.300 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_198/O
+                         net (fo=1, routed)           0.568    13.868    Ultrasonic_Sensor/Distance_Measured_2[2]_i_198_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    14.388 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.388    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.505 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.505    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116_n_0
+    SLICE_X10Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.622 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.622    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76_n_0
+    SLICE_X10Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.739 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.739    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40_n_0
+    SLICE_X10Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.856 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.856    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21_n_0
+    SLICE_X10Y71         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.013 r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.519    15.532    Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12_n_2
+    SLICE_X10Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.816    16.348 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.555    16.903    Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16_n_1
+    SLICE_X9Y73          CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.778    17.681 r  Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14/CO[2]
+                         net (fo=10, routed)          0.468    18.149    Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14_n_1
+    SLICE_X9Y72          LUT5 (Prop_lut5_I3_O)        0.313    18.462 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_14/O
+                         net (fo=2, routed)           0.166    18.627    Ultrasonic_Sensor/Distance_Measured_2[10]_i_14_n_0
+    SLICE_X9Y72          LUT5 (Prop_lut5_I4_O)        0.124    18.751 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_5/O
+                         net (fo=1, routed)           0.473    19.224    Ultrasonic_Sensor/Distance_Measured_2[10]_i_5_n_0
+    SLICE_X8Y71          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    19.771 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.692    20.463    Ultrasonic_Sensor_n_72
+    SLICE_X7Y69          LUT3 (Prop_lut3_I2_O)        0.301    20.764 r  Distance_Measured_2[0]_i_103/O
+                         net (fo=1, routed)           0.569    21.333    Distance_Measured_2[0]_i_103_n_0
+    SLICE_X6Y69          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    21.853 r  Distance_Measured_2_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    21.853    Distance_Measured_2_reg[0]_i_78_n_0
+    SLICE_X6Y70          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    22.072 r  Distance_Measured_2_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.600    22.672    Ultrasonic_Sensor/Distance_Measured_23_1[0]
+    SLICE_X4Y69          LUT3 (Prop_lut3_I1_O)        0.295    22.967 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_79/O
+                         net (fo=3, routed)           0.672    23.639    Ultrasonic_Sensor/Distance_Measured_2[0]_i_79_n_0
+    SLICE_X4Y69          LUT5 (Prop_lut5_I4_O)        0.124    23.763 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_50/O
+                         net (fo=1, routed)           0.546    24.308    Ultrasonic_Sensor/Distance_Measured_2[0]_i_50_n_0
+    SLICE_X5Y71          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    24.815 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28/CO[3]
+                         net (fo=1, routed)           0.000    24.815    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28_n_0
+    SLICE_X5Y72          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    25.149 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10/O[1]
+                         net (fo=3, routed)           0.367    25.516    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10_n_6
+    SLICE_X4Y72          LUT4 (Prop_lut4_I0_O)        0.303    25.819 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_40/O
+                         net (fo=1, routed)           0.475    26.294    Ultrasonic_Sensor/Distance_Measured_2[0]_i_40_n_0
+    SLICE_X3Y72          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    26.692 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.692    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19_n_0
+    SLICE_X3Y73          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.806 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.806    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7_n_0
+    SLICE_X3Y74          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.077 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.540    27.617    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4_n_3
+    SLICE_X4Y72          LUT5 (Prop_lut5_I1_O)        0.373    27.990 r  Ultrasonic_Sensor/Distance_Measured_2[4]_i_3/O
+                         net (fo=1, routed)           0.336    28.326    Ultrasonic_Sensor/Distance_Measured_2[4]_i_3_n_0
+    SLICE_X4Y73          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580    28.906 r  Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.906    Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2_n_0
+    SLICE_X4Y74          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    29.240 r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2/O[1]
+                         net (fo=1, routed)           0.505    29.745    Ultrasonic_Sensor/Distance_Measured_21[6]
+    SLICE_X5Y75          LUT5 (Prop_lut5_I0_O)        0.303    30.048 r  Ultrasonic_Sensor/Distance_Measured_2[6]_i_1/O
+                         net (fo=1, routed)           0.000    30.048    Ultrasonic_Sensor/Distance_Measured_2[6]_i_1_n_0
+    SLICE_X5Y75          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.490    14.831    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X5Y75          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]/C
+                         clock pessimism              0.258    15.089    
+                         clock uncertainty           -0.035    15.054    
+    SLICE_X5Y75          FDRE (Setup_fdre_C_D)        0.029    15.083    Ultrasonic_Sensor/Distance_Measured_2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         15.083    
+                         arrival time                         -30.048    
+  -------------------------------------------------------------------
+                         slack                                -14.966    
+
+Slack (VIOLATED) :        -14.938ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_43/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_4_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.795ns  (logic 13.995ns (56.442%)  route 10.800ns (43.557%))
+  Logic Levels:           34  (CARRY4=23 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.764ns = ( 14.764 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.161ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.641     5.161    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_43/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y26          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      4.009     9.170 f  Ultrasonic_Sensor/Distance_Measured_43/P[3]
+                         net (fo=10, routed)          0.903    10.073    Ultrasonic_Sensor/Distance_Measured_43_n_102
+    SLICE_X54Y66         LUT2 (Prop_lut2_I0_O)        0.124    10.197 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_56/O
+                         net (fo=1, routed)           0.000    10.197    Ultrasonic_Sensor/Distance_Measured_4[13]_i_56_n_0
+    SLICE_X54Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.730 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.730    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37_n_0
+    SLICE_X54Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.847 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.847    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23_n_0
+    SLICE_X54Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.964 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.964    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16_n_0
+    SLICE_X54Y69         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    11.218 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.881    12.099    Ultrasonic_Sensor/CO[0]
+    SLICE_X52Y67         LUT3 (Prop_lut3_I1_O)        0.367    12.466 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_79/O
+                         net (fo=13, routed)          0.773    13.239    Ultrasonic_Sensor/Distance_Measured_4[2]_i_79_n_0
+    SLICE_X52Y65         LUT6 (Prop_lut6_I0_O)        0.124    13.363 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_189/O
+                         net (fo=1, routed)           0.543    13.906    Ultrasonic_Sensor/Distance_Measured_4[2]_i_189_n_0
+    SLICE_X53Y67         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    14.304 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.304    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148_n_0
+    SLICE_X53Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.418 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.418    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156_n_0
+    SLICE_X53Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.532 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.532    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116_n_0
+    SLICE_X53Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.646 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.646    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76_n_0
+    SLICE_X53Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.760 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.760    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40_n_0
+    SLICE_X53Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.874 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.874    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21_n_0
+    SLICE_X53Y73         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.031 r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.380    15.411    Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12_n_2
+    SLICE_X52Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.224 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.382    16.606    Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16_n_1
+    SLICE_X52Y74         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.816    17.422 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14/O[1]
+                         net (fo=4, routed)           0.478    17.900    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14_n_6
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.306    18.206 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_18/O
+                         net (fo=2, routed)           0.682    18.887    Ultrasonic_Sensor/Distance_Measured_4[10]_i_18_n_0
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.124    19.011 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_6/O
+                         net (fo=1, routed)           0.473    19.484    Ultrasonic_Sensor/Distance_Measured_4[10]_i_6_n_0
+    SLICE_X50Y71         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.579    20.063 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.783    20.846    Ultrasonic_Sensor_n_18
+    SLICE_X52Y71         LUT3 (Prop_lut3_I1_O)        0.301    21.147 r  Distance_Measured_4[0]_i_101/O
+                         net (fo=1, routed)           0.533    21.681    Distance_Measured_4[0]_i_101_n_0
+    SLICE_X49Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    22.066 r  Distance_Measured_4_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    22.066    Distance_Measured_4_reg[0]_i_78_n_0
+    SLICE_X49Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    22.288 r  Distance_Measured_4_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.614    22.902    Ultrasonic_Sensor/Distance_Measured_43_1[0]
+    SLICE_X48Y70         LUT3 (Prop_lut3_I1_O)        0.299    23.201 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_79/O
+                         net (fo=3, routed)           0.411    23.612    Ultrasonic_Sensor/Distance_Measured_4[0]_i_79_n_0
+    SLICE_X47Y70         LUT5 (Prop_lut5_I4_O)        0.124    23.736 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_50/O
+                         net (fo=1, routed)           0.635    24.371    Ultrasonic_Sensor/Distance_Measured_4[0]_i_50_n_0
+    SLICE_X46Y71         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    24.918 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28/O[2]
+                         net (fo=3, routed)           0.455    25.373    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28_n_5
+    SLICE_X44Y71         LUT4 (Prop_lut4_I0_O)        0.301    25.674 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_63/O
+                         net (fo=1, routed)           0.622    26.296    Ultrasonic_Sensor/Distance_Measured_4[0]_i_63_n_0
+    SLICE_X45Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.681 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38/CO[3]
+                         net (fo=1, routed)           0.000    26.681    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38_n_0
+    SLICE_X45Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.795 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.795    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19_n_0
+    SLICE_X45Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.909 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.909    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7_n_0
+    SLICE_X45Y74         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.180 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.781    27.961    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4_n_3
+    SLICE_X47Y72         LUT5 (Prop_lut5_I1_O)        0.373    28.334 r  Ultrasonic_Sensor/Distance_Measured_4[4]_i_7/O
+                         net (fo=1, routed)           0.000    28.334    Ultrasonic_Sensor/Distance_Measured_4[4]_i_7_n_0
+    SLICE_X47Y72         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    28.866 r  Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.866    Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2_n_0
+    SLICE_X47Y73         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    29.179 r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2/O[3]
+                         net (fo=1, routed)           0.471    29.651    Ultrasonic_Sensor/Distance_Measured_41[8]
+    SLICE_X47Y76         LUT5 (Prop_lut5_I0_O)        0.306    29.957 r  Ultrasonic_Sensor/Distance_Measured_4[8]_i_1/O
+                         net (fo=1, routed)           0.000    29.957    Ultrasonic_Sensor/Distance_Measured_4[8]_i_1_n_0
+    SLICE_X47Y76         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.423    14.764    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X47Y76         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]/C
+                         clock pessimism              0.258    15.022    
+                         clock uncertainty           -0.035    14.987    
+    SLICE_X47Y76         FDRE (Setup_fdre_C_D)        0.032    15.019    Ultrasonic_Sensor/Distance_Measured_4_reg[8]
+  -------------------------------------------------------------------
+                         required time                         15.019    
+                         arrival time                         -29.957    
+  -------------------------------------------------------------------
+                         slack                                -14.938    
+
+Slack (VIOLATED) :        -14.913ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_43/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_4_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.817ns  (logic 14.013ns (56.465%)  route 10.804ns (43.535%))
+  Logic Levels:           34  (CARRY4=23 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.142ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.762ns = ( 14.762 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.161ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.641     5.161    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_43/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y26          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      4.009     9.170 f  Ultrasonic_Sensor/Distance_Measured_43/P[3]
+                         net (fo=10, routed)          0.903    10.073    Ultrasonic_Sensor/Distance_Measured_43_n_102
+    SLICE_X54Y66         LUT2 (Prop_lut2_I0_O)        0.124    10.197 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_56/O
+                         net (fo=1, routed)           0.000    10.197    Ultrasonic_Sensor/Distance_Measured_4[13]_i_56_n_0
+    SLICE_X54Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.730 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.730    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37_n_0
+    SLICE_X54Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.847 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.847    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23_n_0
+    SLICE_X54Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.964 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.964    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16_n_0
+    SLICE_X54Y69         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    11.218 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.881    12.099    Ultrasonic_Sensor/CO[0]
+    SLICE_X52Y67         LUT3 (Prop_lut3_I1_O)        0.367    12.466 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_79/O
+                         net (fo=13, routed)          0.773    13.239    Ultrasonic_Sensor/Distance_Measured_4[2]_i_79_n_0
+    SLICE_X52Y65         LUT6 (Prop_lut6_I0_O)        0.124    13.363 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_189/O
+                         net (fo=1, routed)           0.543    13.906    Ultrasonic_Sensor/Distance_Measured_4[2]_i_189_n_0
+    SLICE_X53Y67         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    14.304 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.304    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148_n_0
+    SLICE_X53Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.418 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.418    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156_n_0
+    SLICE_X53Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.532 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.532    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116_n_0
+    SLICE_X53Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.646 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.646    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76_n_0
+    SLICE_X53Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.760 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.760    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40_n_0
+    SLICE_X53Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.874 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.874    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21_n_0
+    SLICE_X53Y73         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.031 r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.380    15.411    Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12_n_2
+    SLICE_X52Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.224 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.382    16.606    Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16_n_1
+    SLICE_X52Y74         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.816    17.422 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14/O[1]
+                         net (fo=4, routed)           0.478    17.900    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14_n_6
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.306    18.206 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_18/O
+                         net (fo=2, routed)           0.682    18.887    Ultrasonic_Sensor/Distance_Measured_4[10]_i_18_n_0
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.124    19.011 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_6/O
+                         net (fo=1, routed)           0.473    19.484    Ultrasonic_Sensor/Distance_Measured_4[10]_i_6_n_0
+    SLICE_X50Y71         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.579    20.063 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.783    20.846    Ultrasonic_Sensor_n_18
+    SLICE_X52Y71         LUT3 (Prop_lut3_I1_O)        0.301    21.147 r  Distance_Measured_4[0]_i_101/O
+                         net (fo=1, routed)           0.533    21.681    Distance_Measured_4[0]_i_101_n_0
+    SLICE_X49Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    22.066 r  Distance_Measured_4_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    22.066    Distance_Measured_4_reg[0]_i_78_n_0
+    SLICE_X49Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    22.288 r  Distance_Measured_4_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.614    22.902    Ultrasonic_Sensor/Distance_Measured_43_1[0]
+    SLICE_X48Y70         LUT3 (Prop_lut3_I1_O)        0.299    23.201 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_79/O
+                         net (fo=3, routed)           0.411    23.612    Ultrasonic_Sensor/Distance_Measured_4[0]_i_79_n_0
+    SLICE_X47Y70         LUT5 (Prop_lut5_I4_O)        0.124    23.736 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_50/O
+                         net (fo=1, routed)           0.635    24.371    Ultrasonic_Sensor/Distance_Measured_4[0]_i_50_n_0
+    SLICE_X46Y71         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    24.918 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28/O[2]
+                         net (fo=3, routed)           0.455    25.373    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28_n_5
+    SLICE_X44Y71         LUT4 (Prop_lut4_I0_O)        0.301    25.674 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_63/O
+                         net (fo=1, routed)           0.622    26.296    Ultrasonic_Sensor/Distance_Measured_4[0]_i_63_n_0
+    SLICE_X45Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.681 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38/CO[3]
+                         net (fo=1, routed)           0.000    26.681    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38_n_0
+    SLICE_X45Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.795 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.795    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19_n_0
+    SLICE_X45Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.909 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.909    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7_n_0
+    SLICE_X45Y74         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.180 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.781    27.961    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4_n_3
+    SLICE_X47Y72         LUT5 (Prop_lut5_I1_O)        0.373    28.334 r  Ultrasonic_Sensor/Distance_Measured_4[4]_i_7/O
+                         net (fo=1, routed)           0.000    28.334    Ultrasonic_Sensor/Distance_Measured_4[4]_i_7_n_0
+    SLICE_X47Y72         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    28.866 r  Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.866    Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2_n_0
+    SLICE_X47Y73         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    29.200 r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2/O[1]
+                         net (fo=1, routed)           0.475    29.675    Ultrasonic_Sensor/Distance_Measured_41[6]
+    SLICE_X46Y75         LUT5 (Prop_lut5_I0_O)        0.303    29.978 r  Ultrasonic_Sensor/Distance_Measured_4[6]_i_1/O
+                         net (fo=1, routed)           0.000    29.978    Ultrasonic_Sensor/Distance_Measured_4[6]_i_1_n_0
+    SLICE_X46Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.421    14.762    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X46Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]/C
+                         clock pessimism              0.258    15.020    
+                         clock uncertainty           -0.035    14.985    
+    SLICE_X46Y75         FDRE (Setup_fdre_C_D)        0.081    15.066    Ultrasonic_Sensor/Distance_Measured_4_reg[6]
+  -------------------------------------------------------------------
+                         required time                         15.066    
+                         arrival time                         -29.978    
+  -------------------------------------------------------------------
+                         slack                                -14.913    
+
+Slack (VIOLATED) :        -14.905ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_23/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_2_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.830ns  (logic 14.155ns (57.007%)  route 10.675ns (42.993%))
+  Logic Levels:           31  (CARRY4=20 LUT1=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.831ns = ( 14.831 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.159ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.639     5.159    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X0Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_23/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y26          DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      4.009     9.168 f  Ultrasonic_Sensor/Distance_Measured_23/P[0]
+                         net (fo=19, routed)          0.544     9.712    Ultrasonic_Sensor/Distance_Measured_23_n_105
+    SLICE_X12Y65         LUT1 (Prop_lut1_I0_O)        0.124     9.836 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_213/O
+                         net (fo=1, routed)           0.520    10.356    Ultrasonic_Sensor/Distance_Measured_2[2]_i_213_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595    10.951 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178/CO[3]
+                         net (fo=1, routed)           0.000    10.951    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178_n_0
+    SLICE_X12Y67         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.266 f  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_140/O[3]
+                         net (fo=8, routed)           0.735    12.001    Ultrasonic_Sensor/Distance_Measured_23__0[8]
+    SLICE_X13Y69         LUT3 (Prop_lut3_I2_O)        0.307    12.308 f  Ultrasonic_Sensor/Distance_Measured_2[2]_i_82/O
+                         net (fo=13, routed)          0.868    13.176    Ultrasonic_Sensor/Distance_Measured_2[2]_i_82_n_0
+    SLICE_X11Y67         LUT6 (Prop_lut6_I5_O)        0.124    13.300 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_198/O
+                         net (fo=1, routed)           0.568    13.868    Ultrasonic_Sensor/Distance_Measured_2[2]_i_198_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    14.388 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.388    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.505 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.505    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116_n_0
+    SLICE_X10Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.622 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.622    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76_n_0
+    SLICE_X10Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.739 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.739    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40_n_0
+    SLICE_X10Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.856 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.856    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21_n_0
+    SLICE_X10Y71         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.013 r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.519    15.532    Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12_n_2
+    SLICE_X10Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.816    16.348 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.555    16.903    Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16_n_1
+    SLICE_X9Y73          CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.778    17.681 r  Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14/CO[2]
+                         net (fo=10, routed)          0.468    18.149    Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14_n_1
+    SLICE_X9Y72          LUT5 (Prop_lut5_I3_O)        0.313    18.462 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_14/O
+                         net (fo=2, routed)           0.166    18.627    Ultrasonic_Sensor/Distance_Measured_2[10]_i_14_n_0
+    SLICE_X9Y72          LUT5 (Prop_lut5_I4_O)        0.124    18.751 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_5/O
+                         net (fo=1, routed)           0.473    19.224    Ultrasonic_Sensor/Distance_Measured_2[10]_i_5_n_0
+    SLICE_X8Y71          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    19.771 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.692    20.463    Ultrasonic_Sensor_n_72
+    SLICE_X7Y69          LUT3 (Prop_lut3_I2_O)        0.301    20.764 r  Distance_Measured_2[0]_i_103/O
+                         net (fo=1, routed)           0.569    21.333    Distance_Measured_2[0]_i_103_n_0
+    SLICE_X6Y69          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    21.853 r  Distance_Measured_2_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    21.853    Distance_Measured_2_reg[0]_i_78_n_0
+    SLICE_X6Y70          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    22.072 r  Distance_Measured_2_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.600    22.672    Ultrasonic_Sensor/Distance_Measured_23_1[0]
+    SLICE_X4Y69          LUT3 (Prop_lut3_I1_O)        0.295    22.967 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_79/O
+                         net (fo=3, routed)           0.672    23.639    Ultrasonic_Sensor/Distance_Measured_2[0]_i_79_n_0
+    SLICE_X4Y69          LUT5 (Prop_lut5_I4_O)        0.124    23.763 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_50/O
+                         net (fo=1, routed)           0.546    24.308    Ultrasonic_Sensor/Distance_Measured_2[0]_i_50_n_0
+    SLICE_X5Y71          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    24.815 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28/CO[3]
+                         net (fo=1, routed)           0.000    24.815    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28_n_0
+    SLICE_X5Y72          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    25.149 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10/O[1]
+                         net (fo=3, routed)           0.367    25.516    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10_n_6
+    SLICE_X4Y72          LUT4 (Prop_lut4_I0_O)        0.303    25.819 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_40/O
+                         net (fo=1, routed)           0.475    26.294    Ultrasonic_Sensor/Distance_Measured_2[0]_i_40_n_0
+    SLICE_X3Y72          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    26.692 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.692    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19_n_0
+    SLICE_X3Y73          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.806 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.806    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7_n_0
+    SLICE_X3Y74          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.077 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.540    27.617    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4_n_3
+    SLICE_X4Y72          LUT5 (Prop_lut5_I1_O)        0.373    27.990 r  Ultrasonic_Sensor/Distance_Measured_2[4]_i_3/O
+                         net (fo=1, routed)           0.336    28.326    Ultrasonic_Sensor/Distance_Measured_2[4]_i_3_n_0
+    SLICE_X4Y73          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580    28.906 r  Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.906    Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2_n_0
+    SLICE_X4Y74          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    29.219 r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2/O[3]
+                         net (fo=1, routed)           0.464    29.683    Ultrasonic_Sensor/Distance_Measured_21[8]
+    SLICE_X5Y75          LUT5 (Prop_lut5_I0_O)        0.306    29.989 r  Ultrasonic_Sensor/Distance_Measured_2[8]_i_1/O
+                         net (fo=1, routed)           0.000    29.989    Ultrasonic_Sensor/Distance_Measured_2[8]_i_1_n_0
+    SLICE_X5Y75          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.490    14.831    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X5Y75          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]/C
+                         clock pessimism              0.258    15.089    
+                         clock uncertainty           -0.035    15.054    
+    SLICE_X5Y75          FDRE (Setup_fdre_C_D)        0.031    15.085    Ultrasonic_Sensor/Distance_Measured_2_reg[8]
+  -------------------------------------------------------------------
+                         required time                         15.085    
+                         arrival time                         -29.989    
+  -------------------------------------------------------------------
+                         slack                                -14.905    
+
+Slack (VIOLATED) :        -14.894ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_23/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_2_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.822ns  (logic 14.191ns (57.172%)  route 10.631ns (42.828%))
+  Logic Levels:           32  (CARRY4=21 LUT1=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.833ns = ( 14.833 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.159ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.639     5.159    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X0Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_23/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y26          DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      4.009     9.168 f  Ultrasonic_Sensor/Distance_Measured_23/P[0]
+                         net (fo=19, routed)          0.544     9.712    Ultrasonic_Sensor/Distance_Measured_23_n_105
+    SLICE_X12Y65         LUT1 (Prop_lut1_I0_O)        0.124     9.836 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_213/O
+                         net (fo=1, routed)           0.520    10.356    Ultrasonic_Sensor/Distance_Measured_2[2]_i_213_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595    10.951 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178/CO[3]
+                         net (fo=1, routed)           0.000    10.951    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_178_n_0
+    SLICE_X12Y67         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.266 f  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_140/O[3]
+                         net (fo=8, routed)           0.735    12.001    Ultrasonic_Sensor/Distance_Measured_23__0[8]
+    SLICE_X13Y69         LUT3 (Prop_lut3_I2_O)        0.307    12.308 f  Ultrasonic_Sensor/Distance_Measured_2[2]_i_82/O
+                         net (fo=13, routed)          0.868    13.176    Ultrasonic_Sensor/Distance_Measured_2[2]_i_82_n_0
+    SLICE_X11Y67         LUT6 (Prop_lut6_I5_O)        0.124    13.300 r  Ultrasonic_Sensor/Distance_Measured_2[2]_i_198/O
+                         net (fo=1, routed)           0.568    13.868    Ultrasonic_Sensor/Distance_Measured_2[2]_i_198_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    14.388 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.388    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_156_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.505 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.505    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_116_n_0
+    SLICE_X10Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.622 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.622    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_76_n_0
+    SLICE_X10Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.739 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.739    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_40_n_0
+    SLICE_X10Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.856 r  Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.856    Ultrasonic_Sensor/Distance_Measured_2_reg[2]_i_21_n_0
+    SLICE_X10Y71         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.013 r  Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.519    15.532    Ultrasonic_Sensor/Distance_Measured_2_reg[6]_i_12_n_2
+    SLICE_X10Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.816    16.348 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.555    16.903    Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_16_n_1
+    SLICE_X9Y73          CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.778    17.681 r  Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14/CO[2]
+                         net (fo=10, routed)          0.468    18.149    Ultrasonic_Sensor/Distance_Measured_2_reg[13]_i_14_n_1
+    SLICE_X9Y72          LUT5 (Prop_lut5_I3_O)        0.313    18.462 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_14/O
+                         net (fo=2, routed)           0.166    18.627    Ultrasonic_Sensor/Distance_Measured_2[10]_i_14_n_0
+    SLICE_X9Y72          LUT5 (Prop_lut5_I4_O)        0.124    18.751 r  Ultrasonic_Sensor/Distance_Measured_2[10]_i_5/O
+                         net (fo=1, routed)           0.473    19.224    Ultrasonic_Sensor/Distance_Measured_2[10]_i_5_n_0
+    SLICE_X8Y71          CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    19.771 r  Ultrasonic_Sensor/Distance_Measured_2_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.692    20.463    Ultrasonic_Sensor_n_72
+    SLICE_X7Y69          LUT3 (Prop_lut3_I2_O)        0.301    20.764 r  Distance_Measured_2[0]_i_103/O
+                         net (fo=1, routed)           0.569    21.333    Distance_Measured_2[0]_i_103_n_0
+    SLICE_X6Y69          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    21.853 r  Distance_Measured_2_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    21.853    Distance_Measured_2_reg[0]_i_78_n_0
+    SLICE_X6Y70          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    22.072 r  Distance_Measured_2_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.600    22.672    Ultrasonic_Sensor/Distance_Measured_23_1[0]
+    SLICE_X4Y69          LUT3 (Prop_lut3_I1_O)        0.295    22.967 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_79/O
+                         net (fo=3, routed)           0.672    23.639    Ultrasonic_Sensor/Distance_Measured_2[0]_i_79_n_0
+    SLICE_X4Y69          LUT5 (Prop_lut5_I4_O)        0.124    23.763 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_50/O
+                         net (fo=1, routed)           0.546    24.308    Ultrasonic_Sensor/Distance_Measured_2[0]_i_50_n_0
+    SLICE_X5Y71          CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    24.815 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28/CO[3]
+                         net (fo=1, routed)           0.000    24.815    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_28_n_0
+    SLICE_X5Y72          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    25.149 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10/O[1]
+                         net (fo=3, routed)           0.367    25.516    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_10_n_6
+    SLICE_X4Y72          LUT4 (Prop_lut4_I0_O)        0.303    25.819 r  Ultrasonic_Sensor/Distance_Measured_2[0]_i_40/O
+                         net (fo=1, routed)           0.475    26.294    Ultrasonic_Sensor/Distance_Measured_2[0]_i_40_n_0
+    SLICE_X3Y72          CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    26.692 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.692    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_19_n_0
+    SLICE_X3Y73          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.806 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.806    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_7_n_0
+    SLICE_X3Y74          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.077 r  Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.540    27.617    Ultrasonic_Sensor/Distance_Measured_2_reg[0]_i_4_n_3
+    SLICE_X4Y72          LUT5 (Prop_lut5_I1_O)        0.373    27.990 r  Ultrasonic_Sensor/Distance_Measured_2[4]_i_3/O
+                         net (fo=1, routed)           0.336    28.326    Ultrasonic_Sensor/Distance_Measured_2[4]_i_3_n_0
+    SLICE_X4Y73          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580    28.906 r  Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.906    Ultrasonic_Sensor/Distance_Measured_2_reg[4]_i_2_n_0
+    SLICE_X4Y74          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    29.020 r  Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.009    29.029    Ultrasonic_Sensor/Distance_Measured_2_reg[8]_i_2_n_0
+    SLICE_X4Y75          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    29.268 r  Ultrasonic_Sensor/Distance_Measured_2_reg[12]_i_2/O[2]
+                         net (fo=1, routed)           0.411    29.679    Ultrasonic_Sensor/Distance_Measured_21[11]
+    SLICE_X5Y76          LUT5 (Prop_lut5_I0_O)        0.302    29.981 r  Ultrasonic_Sensor/Distance_Measured_2[11]_i_1/O
+                         net (fo=1, routed)           0.000    29.981    Ultrasonic_Sensor/Distance_Measured_2[11]_i_1_n_0
+    SLICE_X5Y76          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.492    14.833    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X5Y76          FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_2_reg[11]/C
+                         clock pessimism              0.258    15.091    
+                         clock uncertainty           -0.035    15.056    
+    SLICE_X5Y76          FDRE (Setup_fdre_C_D)        0.031    15.087    Ultrasonic_Sensor/Distance_Measured_2_reg[11]
+  -------------------------------------------------------------------
+                         required time                         15.087    
+                         arrival time                         -29.981    
+  -------------------------------------------------------------------
+                         slack                                -14.894    
+
+Slack (VIOLATED) :        -14.894ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_43/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_4_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.749ns  (logic 14.125ns (57.074%)  route 10.624ns (42.926%))
+  Logic Levels:           36  (CARRY4=25 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=1)
+  Clock Path Skew:        -0.142ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.762ns = ( 14.762 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.161ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.641     5.161    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y26          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_43/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y26          DSP48E1 (Prop_dsp48e1_CLK_P[3])
+                                                      4.009     9.170 f  Ultrasonic_Sensor/Distance_Measured_43/P[3]
+                         net (fo=10, routed)          0.903    10.073    Ultrasonic_Sensor/Distance_Measured_43_n_102
+    SLICE_X54Y66         LUT2 (Prop_lut2_I0_O)        0.124    10.197 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_56/O
+                         net (fo=1, routed)           0.000    10.197    Ultrasonic_Sensor/Distance_Measured_4[13]_i_56_n_0
+    SLICE_X54Y66         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.730 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.730    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_37_n_0
+    SLICE_X54Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.847 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.847    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_23_n_0
+    SLICE_X54Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.964 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.964    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_16_n_0
+    SLICE_X54Y69         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.254    11.218 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.881    12.099    Ultrasonic_Sensor/CO[0]
+    SLICE_X52Y67         LUT3 (Prop_lut3_I1_O)        0.367    12.466 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_79/O
+                         net (fo=13, routed)          0.773    13.239    Ultrasonic_Sensor/Distance_Measured_4[2]_i_79_n_0
+    SLICE_X52Y65         LUT6 (Prop_lut6_I0_O)        0.124    13.363 r  Ultrasonic_Sensor/Distance_Measured_4[2]_i_189/O
+                         net (fo=1, routed)           0.543    13.906    Ultrasonic_Sensor/Distance_Measured_4[2]_i_189_n_0
+    SLICE_X53Y67         CARRY4 (Prop_carry4_DI[2]_CO[3])
+                                                      0.398    14.304 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.304    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_148_n_0
+    SLICE_X53Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.418 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.418    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_156_n_0
+    SLICE_X53Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.532 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.532    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_116_n_0
+    SLICE_X53Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.646 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.646    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_76_n_0
+    SLICE_X53Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.760 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.760    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_40_n_0
+    SLICE_X53Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.874 r  Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.874    Ultrasonic_Sensor/Distance_Measured_4_reg[2]_i_21_n_0
+    SLICE_X53Y73         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.031 r  Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.380    15.411    Ultrasonic_Sensor/Distance_Measured_4_reg[6]_i_12_n_2
+    SLICE_X52Y73         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.224 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.382    16.606    Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_16_n_1
+    SLICE_X52Y74         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.816    17.422 r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14/O[1]
+                         net (fo=4, routed)           0.478    17.900    Ultrasonic_Sensor/Distance_Measured_4_reg[13]_i_14_n_6
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.306    18.206 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_18/O
+                         net (fo=2, routed)           0.682    18.887    Ultrasonic_Sensor/Distance_Measured_4[10]_i_18_n_0
+    SLICE_X51Y72         LUT5 (Prop_lut5_I4_O)        0.124    19.011 r  Ultrasonic_Sensor/Distance_Measured_4[10]_i_6/O
+                         net (fo=1, routed)           0.473    19.484    Ultrasonic_Sensor/Distance_Measured_4[10]_i_6_n_0
+    SLICE_X50Y71         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.579    20.063 r  Ultrasonic_Sensor/Distance_Measured_4_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.783    20.846    Ultrasonic_Sensor_n_18
+    SLICE_X52Y71         LUT3 (Prop_lut3_I1_O)        0.301    21.147 r  Distance_Measured_4[0]_i_101/O
+                         net (fo=1, routed)           0.533    21.681    Distance_Measured_4[0]_i_101_n_0
+    SLICE_X49Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    22.066 r  Distance_Measured_4_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    22.066    Distance_Measured_4_reg[0]_i_78_n_0
+    SLICE_X49Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    22.288 r  Distance_Measured_4_reg[0]_i_57/O[0]
+                         net (fo=3, routed)           0.614    22.902    Ultrasonic_Sensor/Distance_Measured_43_1[0]
+    SLICE_X48Y70         LUT3 (Prop_lut3_I1_O)        0.299    23.201 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_79/O
+                         net (fo=3, routed)           0.411    23.612    Ultrasonic_Sensor/Distance_Measured_4[0]_i_79_n_0
+    SLICE_X47Y70         LUT5 (Prop_lut5_I4_O)        0.124    23.736 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_50/O
+                         net (fo=1, routed)           0.635    24.371    Ultrasonic_Sensor/Distance_Measured_4[0]_i_50_n_0
+    SLICE_X46Y71         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.547    24.918 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28/O[2]
+                         net (fo=3, routed)           0.455    25.373    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_28_n_5
+    SLICE_X44Y71         LUT4 (Prop_lut4_I0_O)        0.301    25.674 r  Ultrasonic_Sensor/Distance_Measured_4[0]_i_63/O
+                         net (fo=1, routed)           0.622    26.296    Ultrasonic_Sensor/Distance_Measured_4[0]_i_63_n_0
+    SLICE_X45Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.681 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38/CO[3]
+                         net (fo=1, routed)           0.000    26.681    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_38_n_0
+    SLICE_X45Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.795 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.795    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_19_n_0
+    SLICE_X45Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.909 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.909    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_7_n_0
+    SLICE_X45Y74         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    27.180 r  Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.781    27.961    Ultrasonic_Sensor/Distance_Measured_4_reg[0]_i_4_n_3
+    SLICE_X47Y72         LUT5 (Prop_lut5_I1_O)        0.373    28.334 r  Ultrasonic_Sensor/Distance_Measured_4[4]_i_7/O
+                         net (fo=1, routed)           0.000    28.334    Ultrasonic_Sensor/Distance_Measured_4[4]_i_7_n_0
+    SLICE_X47Y72         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    28.866 r  Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.866    Ultrasonic_Sensor/Distance_Measured_4_reg[4]_i_2_n_0
+    SLICE_X47Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    28.980 r  Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.980    Ultrasonic_Sensor/Distance_Measured_4_reg[8]_i_2_n_0
+    SLICE_X47Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    29.094 r  Ultrasonic_Sensor/Distance_Measured_4_reg[12]_i_2/CO[3]
+                         net (fo=1, routed)           0.009    29.103    Ultrasonic_Sensor/Distance_Measured_4_reg[12]_i_2_n_0
+    SLICE_X47Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222    29.325 r  Ultrasonic_Sensor/Distance_Measured_4_reg[31]_i_2/O[0]
+                         net (fo=1, routed)           0.286    29.611    Ultrasonic_Sensor/Distance_Measured_41[13]
+    SLICE_X45Y75         LUT5 (Prop_lut5_I0_O)        0.299    29.910 r  Ultrasonic_Sensor/Distance_Measured_4[13]_i_1/O
+                         net (fo=1, routed)           0.000    29.910    Ultrasonic_Sensor/Distance_Measured_4[13]_i_1_n_0
+    SLICE_X45Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.421    14.762    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X45Y75         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_4_reg[13]/C
+                         clock pessimism              0.258    15.020    
+                         clock uncertainty           -0.035    14.985    
+    SLICE_X45Y75         FDRE (Setup_fdre_C_D)        0.031    15.016    Ultrasonic_Sensor/Distance_Measured_4_reg[13]
+  -------------------------------------------------------------------
+                         required time                         15.016    
+                         arrival time                         -29.910    
+  -------------------------------------------------------------------
+                         slack                                -14.894    
+
+Slack (VIOLATED) :        -14.893ns  (required time - arrival time)
+  Source:                 Ultrasonic_Sensor/Distance_Measured_33/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Distance_Measured_3_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        24.756ns  (logic 14.419ns (58.243%)  route 10.337ns (41.757%))
+  Logic Levels:           35  (CARRY4=23 LUT2=1 LUT3=3 LUT4=1 LUT5=5 LUT6=2)
+  Clock Path Skew:        -0.133ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.780ns = ( 14.780 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.170ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.650     5.170    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    DSP48_X1Y20          DSP48E1                                      r  Ultrasonic_Sensor/Distance_Measured_33/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X1Y20          DSP48E1 (Prop_dsp48e1_CLK_P[1])
+                                                      4.009     9.179 f  Ultrasonic_Sensor/Distance_Measured_33/P[1]
+                         net (fo=12, routed)          0.843    10.022    Ultrasonic_Sensor/Distance_Measured_33_n_104
+    SLICE_X55Y50         LUT2 (Prop_lut2_I0_O)        0.124    10.146 r  Ultrasonic_Sensor/Distance_Measured_3[13]_i_57/O
+                         net (fo=1, routed)           0.000    10.146    Ultrasonic_Sensor/Distance_Measured_3[13]_i_57_n_0
+    SLICE_X55Y50         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    10.678 r  Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_37/CO[3]
+                         net (fo=1, routed)           0.000    10.678    Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_37_n_0
+    SLICE_X55Y51         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.792 r  Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    10.792    Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_23_n_0
+    SLICE_X55Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.906 r  Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_16/CO[3]
+                         net (fo=1, routed)           0.000    10.906    Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_16_n_0
+    SLICE_X55Y53         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    11.177 r  Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_10/CO[0]
+                         net (fo=208, routed)         0.814    11.991    Ultrasonic_Sensor/Distance_Measured_3_reg[13]_1[0]
+    SLICE_X52Y50         LUT3 (Prop_lut3_I1_O)        0.373    12.364 r  Ultrasonic_Sensor/Distance_Measured_3[2]_i_161/O
+                         net (fo=5, routed)           0.970    13.334    Ultrasonic_Sensor/Distance_Measured_3[2]_i_161_n_0
+    SLICE_X53Y52         LUT6 (Prop_lut6_I1_O)        0.124    13.458 r  Ultrasonic_Sensor/Distance_Measured_3[2]_i_194/O
+                         net (fo=1, routed)           0.000    13.458    Ultrasonic_Sensor/Distance_Measured_3[2]_i_194_n_0
+    SLICE_X53Y52         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    14.008 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_148/CO[3]
+                         net (fo=1, routed)           0.000    14.008    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_148_n_0
+    SLICE_X53Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.122 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_156/CO[3]
+                         net (fo=1, routed)           0.000    14.122    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_156_n_0
+    SLICE_X53Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.236 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_116/CO[3]
+                         net (fo=1, routed)           0.000    14.236    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_116_n_0
+    SLICE_X53Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.350 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_76/CO[3]
+                         net (fo=1, routed)           0.000    14.350    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_76_n_0
+    SLICE_X53Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.464 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_40/CO[3]
+                         net (fo=1, routed)           0.000    14.464    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_40_n_0
+    SLICE_X53Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    14.578 r  Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    14.578    Ultrasonic_Sensor/Distance_Measured_3_reg[2]_i_21_n_0
+    SLICE_X53Y58         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    14.735 r  Ultrasonic_Sensor/Distance_Measured_3_reg[6]_i_12/CO[1]
+                         net (fo=7, routed)           0.517    15.252    Ultrasonic_Sensor/Distance_Measured_3_reg[6]_i_12_n_2
+    SLICE_X54Y58         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.813    16.065 r  Ultrasonic_Sensor/Distance_Measured_3_reg[10]_i_16/CO[2]
+                         net (fo=6, routed)           0.391    16.457    Ultrasonic_Sensor/Distance_Measured_3_reg[10]_i_16_n_1
+    SLICE_X54Y57         CARRY4 (Prop_carry4_CYINIT_CO[2])
+                                                      0.794    17.251 r  Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_14/CO[2]
+                         net (fo=10, routed)          0.817    18.068    Ultrasonic_Sensor/Distance_Measured_3_reg[13]_i_14_n_1
+    SLICE_X50Y54         LUT5 (Prop_lut5_I3_O)        0.310    18.378 r  Ultrasonic_Sensor/Distance_Measured_3[10]_i_14/O
+                         net (fo=2, routed)           0.173    18.550    Ultrasonic_Sensor/Distance_Measured_3[10]_i_14_n_0
+    SLICE_X50Y54         LUT5 (Prop_lut5_I4_O)        0.124    18.674 r  Ultrasonic_Sensor/Distance_Measured_3[10]_i_5/O
+                         net (fo=1, routed)           0.501    19.176    Ultrasonic_Sensor/Distance_Measured_3[10]_i_5_n_0
+    SLICE_X49Y57         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.537    19.713 r  Ultrasonic_Sensor/Distance_Measured_3_reg[10]_i_2/O[2]
+                         net (fo=23, routed)          0.864    20.577    Ultrasonic_Sensor_n_45
+    SLICE_X50Y55         LUT3 (Prop_lut3_I1_O)        0.302    20.879 r  Distance_Measured_3[0]_i_101/O
+                         net (fo=1, routed)           0.482    21.361    Distance_Measured_3[0]_i_101_n_0
+    SLICE_X52Y58         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.396    21.757 r  Distance_Measured_3_reg[0]_i_78/CO[3]
+                         net (fo=1, routed)           0.000    21.757    Distance_Measured_3_reg[0]_i_78_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    22.072 r  Distance_Measured_3_reg[0]_i_57/O[3]
+                         net (fo=3, routed)           0.474    22.546    Ultrasonic_Sensor/Distance_Measured_33_1[3]
+    SLICE_X53Y62         LUT3 (Prop_lut3_I1_O)        0.307    22.853 r  Ultrasonic_Sensor/Distance_Measured_3[0]_i_59/O
+                         net (fo=2, routed)           0.502    23.355    Ultrasonic_Sensor/Distance_Measured_3[0]_i_59_n_0
+    SLICE_X49Y59         LUT5 (Prop_lut5_I4_O)        0.124    23.479 r  Ultrasonic_Sensor/Distance_Measured_3[0]_i_31/O
+                         net (fo=2, routed)           0.446    23.925    Ultrasonic_Sensor/Distance_Measured_3[0]_i_31_n_0
+    SLICE_X50Y59         LUT6 (Prop_lut6_I0_O)        0.124    24.049 r  Ultrasonic_Sensor/Distance_Measured_3[0]_i_35/O
+                         net (fo=1, routed)           0.000    24.049    Ultrasonic_Sensor/Distance_Measured_3[0]_i_35_n_0
+    SLICE_X50Y59         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578    24.627 r  Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_10/O[2]
+                         net (fo=3, routed)           0.638    25.266    Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_10_n_5
+    SLICE_X53Y60         LUT4 (Prop_lut4_I0_O)        0.301    25.567 r  Ultrasonic_Sensor/Distance_Measured_3[0]_i_39/O
+                         net (fo=1, routed)           0.488    26.055    Ultrasonic_Sensor/Distance_Measured_3[0]_i_39_n_0
+    SLICE_X48Y58         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.385    26.440 r  Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_19/CO[3]
+                         net (fo=1, routed)           0.000    26.440    Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_19_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    26.554 r  Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    26.554    Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_7_n_0
+    SLICE_X48Y60         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    26.825 r  Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_4/CO[0]
+                         net (fo=16, routed)          0.656    27.480    Ultrasonic_Sensor/Distance_Measured_3_reg[0]_i_4_n_3
+    SLICE_X53Y59         LUT5 (Prop_lut5_I1_O)        0.373    27.853 r  Ultrasonic_Sensor/Distance_Measured_3[4]_i_3/O
+                         net (fo=1, routed)           0.323    28.176    Ultrasonic_Sensor/Distance_Measured_3[4]_i_3_n_0
+    SLICE_X51Y59         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580    28.756 r  Ultrasonic_Sensor/Distance_Measured_3_reg[4]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.756    Ultrasonic_Sensor/Distance_Measured_3_reg[4]_i_2_n_0
+    SLICE_X51Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    28.870 r  Ultrasonic_Sensor/Distance_Measured_3_reg[8]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    28.870    Ultrasonic_Sensor/Distance_Measured_3_reg[8]_i_2_n_0
+    SLICE_X51Y61         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    29.183 r  Ultrasonic_Sensor/Distance_Measured_3_reg[12]_i_2/O[3]
+                         net (fo=1, routed)           0.438    29.621    Ultrasonic_Sensor/Distance_Measured_31[12]
+    SLICE_X53Y61         LUT5 (Prop_lut5_I0_O)        0.306    29.927 r  Ultrasonic_Sensor/Distance_Measured_3[12]_i_1/O
+                         net (fo=1, routed)           0.000    29.927    Ultrasonic_Sensor/Distance_Measured_3[12]_i_1_n_0
+    SLICE_X53Y61         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_3_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  Clk (IN)
+                         net (fo=0)                   0.000    10.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         1.439    14.780    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X53Y61         FDRE                                         r  Ultrasonic_Sensor/Distance_Measured_3_reg[12]/C
+                         clock pessimism              0.258    15.038    
+                         clock uncertainty           -0.035    15.003    
+    SLICE_X53Y61         FDRE (Setup_fdre_C_D)        0.031    15.034    Ultrasonic_Sensor/Distance_Measured_3_reg[12]
+  -------------------------------------------------------------------
+                         required time                         15.034    
+                         arrival time                         -29.927    
+  -------------------------------------------------------------------
+                         slack                                -14.893    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.104ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.476ns  (logic 0.355ns (74.570%)  route 0.121ns (25.430%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     1.922 r  Temp_Sensor/Clk_Div20_carry__4/O[0]
+                         net (fo=1, routed)           0.000     1.922    Temp_Sensor/Clk_Div20_carry__4_n_7
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[21]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y50         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[21]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.922    
+  -------------------------------------------------------------------
+                         slack                                  0.104    
+
+Slack (MET) :             0.115ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.487ns  (logic 0.366ns (75.144%)  route 0.121ns (24.856%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.065     1.933 r  Temp_Sensor/Clk_Div20_carry__4/O[2]
+                         net (fo=1, routed)           0.000     1.933    Temp_Sensor/Clk_Div20_carry__4_n_5
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[23]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y50         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.933    
+  -------------------------------------------------------------------
+                         slack                                  0.115    
+
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.512ns  (logic 0.391ns (76.358%)  route 0.121ns (23.642%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.090     1.958 r  Temp_Sensor/Clk_Div20_carry__4/O[1]
+                         net (fo=1, routed)           0.000     1.958    Temp_Sensor/Clk_Div20_carry__4_n_6
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[22]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y50         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[22]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.958    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.512ns  (logic 0.391ns (76.358%)  route 0.121ns (23.642%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.090     1.958 r  Temp_Sensor/Clk_Div20_carry__4/O[3]
+                         net (fo=1, routed)           0.000     1.958    Temp_Sensor/Clk_Div20_carry__4_n_4
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y50         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[24]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y50         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[24]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.958    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.143ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.515ns  (logic 0.394ns (76.495%)  route 0.121ns (23.505%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     1.907 r  Temp_Sensor/Clk_Div20_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.907    Temp_Sensor/Clk_Div20_carry__4_n_0
+    SLICE_X35Y51         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     1.961 r  Temp_Sensor/Clk_Div20_carry__5/O[0]
+                         net (fo=1, routed)           0.000     1.961    Temp_Sensor/Clk_Div20_carry__5_n_7
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[25]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y51         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[25]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.961    
+  -------------------------------------------------------------------
+                         slack                                  0.143    
+
+Slack (MET) :             0.154ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.526ns  (logic 0.405ns (76.987%)  route 0.121ns (23.013%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     1.907 r  Temp_Sensor/Clk_Div20_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.907    Temp_Sensor/Clk_Div20_carry__4_n_0
+    SLICE_X35Y51         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.065     1.972 r  Temp_Sensor/Clk_Div20_carry__5/O[2]
+                         net (fo=1, routed)           0.000     1.972    Temp_Sensor/Clk_Div20_carry__5_n_5
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[27]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y51         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[27]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.972    
+  -------------------------------------------------------------------
+                         slack                                  0.154    
+
+Slack (MET) :             0.172ns  (arrival time - required time)
+  Source:                 Ultrasonic_Sensor/Trig_Counter_2_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Ultrasonic_Sensor/Trig_Counter_2_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.277ns  (logic 0.186ns (67.247%)  route 0.091ns (32.753%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.065ns
+    Source Clock Delay      (SCD):    1.549ns
+    Clock Pessimism Removal (CPR):    0.503ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.665     1.549    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X1Y122         FDRE                                         r  Ultrasonic_Sensor/Trig_Counter_2_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y122         FDRE (Prop_fdre_C_Q)         0.141     1.690 r  Ultrasonic_Sensor/Trig_Counter_2_reg[0]/Q
+                         net (fo=7, routed)           0.091     1.780    Ultrasonic_Sensor/Trig_Counter_2_reg_n_0_[0]
+    SLICE_X0Y122         LUT6 (Prop_lut6_I2_O)        0.045     1.825 r  Ultrasonic_Sensor/Trig_Counter_2[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.825    Ultrasonic_Sensor/p_0_in__0[5]
+    SLICE_X0Y122         FDRE                                         r  Ultrasonic_Sensor/Trig_Counter_2_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.937     2.065    Ultrasonic_Sensor/Clk_IBUF_BUFG
+    SLICE_X0Y122         FDRE                                         r  Ultrasonic_Sensor/Trig_Counter_2_reg[5]/C
+                         clock pessimism             -0.503     1.562    
+    SLICE_X0Y122         FDRE (Hold_fdre_C_D)         0.092     1.654    Ultrasonic_Sensor/Trig_Counter_2_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.654    
+                         arrival time                           1.825    
+  -------------------------------------------------------------------
+                         slack                                  0.172    
+
+Slack (MET) :             0.176ns  (arrival time - required time)
+  Source:                 LEDs_Control/FSM_sequential_Current_State_H_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            LEDs_Control/FSM_sequential_Current_State_H_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.309ns  (logic 0.186ns (60.284%)  route 0.123ns (39.716%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.953ns
+    Source Clock Delay      (SCD):    1.441ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.558     1.441    LEDs_Control/Clk_IBUF_BUFG
+    SLICE_X15Y82         FDRE                                         r  LEDs_Control/FSM_sequential_Current_State_H_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y82         FDRE (Prop_fdre_C_Q)         0.141     1.582 r  LEDs_Control/FSM_sequential_Current_State_H_reg[0]/Q
+                         net (fo=15, routed)          0.123     1.705    LEDs_Control/Current_State_H[0]
+    SLICE_X14Y82         LUT6 (Prop_lut6_I2_O)        0.045     1.750 r  LEDs_Control/FSM_sequential_Current_State_H[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.750    LEDs_Control/FSM_sequential_Current_State_H[2]_i_1_n_0
+    SLICE_X14Y82         FDRE                                         r  LEDs_Control/FSM_sequential_Current_State_H_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.825     1.953    LEDs_Control/Clk_IBUF_BUFG
+    SLICE_X14Y82         FDRE                                         r  LEDs_Control/FSM_sequential_Current_State_H_reg[2]/C
+                         clock pessimism             -0.499     1.454    
+    SLICE_X14Y82         FDRE (Hold_fdre_C_D)         0.120     1.574    LEDs_Control/FSM_sequential_Current_State_H_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.574    
+                         arrival time                           1.750    
+  -------------------------------------------------------------------
+                         slack                                  0.176    
+
+Slack (MET) :             0.179ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.551ns  (logic 0.430ns (78.031%)  route 0.121ns (21.969%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     1.907 r  Temp_Sensor/Clk_Div20_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.907    Temp_Sensor/Clk_Div20_carry__4_n_0
+    SLICE_X35Y51         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.090     1.997 r  Temp_Sensor/Clk_Div20_carry__5/O[1]
+                         net (fo=1, routed)           0.000     1.997    Temp_Sensor/Clk_Div20_carry__5_n_6
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[26]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y51         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[26]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.997    
+  -------------------------------------------------------------------
+                         slack                                  0.179    
+
+Slack (MET) :             0.179ns  (arrival time - required time)
+  Source:                 Temp_Sensor/Clk_Div2_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Temp_Sensor/Clk_Div2_reg[28]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.551ns  (logic 0.430ns (78.031%)  route 0.121ns (21.969%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.957ns
+    Source Clock Delay      (SCD):    1.446ns
+    Clock Pessimism Removal (CPR):    0.244ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.563     1.446    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y49         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y49         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  Temp_Sensor/Clk_Div2_reg[20]/Q
+                         net (fo=2, routed)           0.120     1.707    Temp_Sensor/Clk_Div2[20]
+    SLICE_X35Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.867 r  Temp_Sensor/Clk_Div20_carry__3/CO[3]
+                         net (fo=1, routed)           0.001     1.868    Temp_Sensor/Clk_Div20_carry__3_n_0
+    SLICE_X35Y50         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     1.907 r  Temp_Sensor/Clk_Div20_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.907    Temp_Sensor/Clk_Div20_carry__4_n_0
+    SLICE_X35Y51         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.090     1.997 r  Temp_Sensor/Clk_Div20_carry__5/O[3]
+                         net (fo=1, routed)           0.000     1.997    Temp_Sensor/Clk_Div20_carry__5_n_4
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    Clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  Clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    Clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  Clk_IBUF_BUFG_inst/O
+                         net (fo=286, routed)         0.829     1.957    Temp_Sensor/Clk_IBUF_BUFG
+    SLICE_X35Y51         FDRE                                         r  Temp_Sensor/Clk_Div2_reg[28]/C
+                         clock pessimism             -0.244     1.713    
+    SLICE_X35Y51         FDRE (Hold_fdre_C_D)         0.105     1.818    Temp_Sensor/Clk_Div2_reg[28]
+  -------------------------------------------------------------------
+                         required time                         -1.818    
+                         arrival time                           1.997    
+  -------------------------------------------------------------------
+                         slack                                  0.179    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { Clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  Clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y80   LEDs_Control/Counter_10_seconds_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y82   LEDs_Control/Counter_10_seconds_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y82   LEDs_Control/Counter_10_seconds_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y83   LEDs_Control/Counter_10_seconds_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y83   LEDs_Control/Counter_10_seconds_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y83   LEDs_Control/Counter_10_seconds_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y83   LEDs_Control/Counter_10_seconds_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y84   LEDs_Control/Counter_10_seconds_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X12Y84   LEDs_Control/Counter_10_seconds_reg[17]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X44Y71   Ultrasonic_Sensor/Distance_Measured_4_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X47Y71   Ultrasonic_Sensor/Distance_Measured_4_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X11Y38   Ultrasonic_Sensor/Echo_Counter_1_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X11Y38   Ultrasonic_Sensor/Echo_Counter_1_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y38    Ultrasonic_Sensor/Echo_Counter_1_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y37    Ultrasonic_Sensor/Echo_Counter_1_reg[3]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y37    Ultrasonic_Sensor/Echo_Counter_1_reg[4]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X8Y37    Ultrasonic_Sensor/Echo_Counter_1_reg[5]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X9Y37    Ultrasonic_Sensor/Echo_Counter_1_reg[6]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X9Y37    Ultrasonic_Sensor/Echo_Counter_1_reg[7]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X12Y81   LEDs_Control/Counter_10_seconds_reg[4]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X12Y81   LEDs_Control/Counter_10_seconds_reg[5]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X12Y81   LEDs_Control/Counter_10_seconds_reg[6]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X12Y81   LEDs_Control/Counter_10_seconds_reg[7]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X13Y81   LEDs_Control/Counter_3_seconds_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X13Y81   LEDs_Control/Counter_3_seconds_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X4Y50    Ultrasonic_Sensor/Distance_Measured_1_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y51    Ultrasonic_Sensor/Distance_Measured_1_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y51    Ultrasonic_Sensor/Distance_Measured_1_reg[13]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X2Y74    Ultrasonic_Sensor/Distance_Measured_2_reg[0]/C
+
+
+
