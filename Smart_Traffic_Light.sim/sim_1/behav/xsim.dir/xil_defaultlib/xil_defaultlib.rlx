@@ -1,0 +1,10 @@
+0.6
+2016.4
+Dec 14 2016
+22:58:16
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sim_1/new/Main_Testbench.vhd,1733756209,vhdl,,,,maintb,,,,,,,,
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/LEDs_Control.vhd,1733750235,vhdl,C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd,,,leds_control,,,,,,,,
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd,1733745961,vhdl,,,,main,,,,,,,,
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Segment_Control.vhd,1733745961,vhdl,C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd,,,segment_control,,,,,,,,
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Temp_Sensor.vhd,1733778367,vhdl,C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd,,,temp_sensor,,,,,,,,
+C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Ultrasonic_Sensor.vhd,1733746837,vhdl,C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd,,,ultrasonic_sensor,,,,,,,,

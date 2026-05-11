@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sources_1/new/Temp_Sensor.vhd"
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sources_1/new/Segment_Control.vhd"
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sources_1/new/Ultrasonic_Sensor.vhd"
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sources_1/new/LEDs_Control.vhd"
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sources_1/new/Main.vhd"
+vhdl xil_defaultlib  "../../../DSD_Project_Final_Version.srcs/sim_1/new/Main_Testbench.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Dec 09 23:25:05 2024
+# Process ID: 18228
+# Current directory: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.sim/sim_1/behav/xsim.dir/MainTB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.sim/sim_1/behav/xsim.dir/MainTB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 09 23:25:07 2024...
