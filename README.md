@@ -1,7 +1,5 @@
 # Smart_Traffic_System_FPGA
 
-
-
 ## 🧠 Project Overview
 This project is a Smart Traffic Management System developed using VHDL and implemented on a Basys 3 FPGA board. It simulates a 4-way traffic intersection with intelligent control over vehicle and pedestrian signals to optimize traffic flow and enhance safety. The system detects red-light violations, monitors environmental conditions, and manages high-voltage traffic lights via relays.
 
@@ -45,8 +43,10 @@ The project architecture is divided into modular VHDL components:
 * `Segment_Control.vhd`: Displays the temperature on a 4-digit 7-segment display.
 * `MainTB.vhd`: Testbench for simulating the full system.
 
-## 🏁 Future Scope
-* Integration of IoT for remote traffic management and monitoring.
-* Implementation of AI-based predictive models to improve traffic efficiency.
-* Adding dynamic traffic light durations based on traffic density and integrating pedestrian push buttons.
-* Implementing real-time logging via a serial interface and expanding to 3-lane support.
+## 👥 Contributors
+* [Contributor Name 1]
+* [Contributor Name 2]
+* [Contributor Name 3]
+* [Contributor Name 4]
+* [Contributor Name 5]
+* [Contributor Name 6]
