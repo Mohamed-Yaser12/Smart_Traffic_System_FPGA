@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Dec 09 23:25:12 2024
+# Process ID: 6836
+# Current directory: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14632 C:\Users\Eng.Mohamed\Desktop\DSD_Project_Final_Version\DSD_Project_Final_Version.xpr
+# Log file: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/vivado.log
+# Journal file: C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Eng.Mohamed/Desktop/DSD_Project_Final_Version/DSD_Project_Final_Version.xpr
