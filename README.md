@@ -6,8 +6,6 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 <img width="1245" height="661" alt="Screen1" src="https://github.com/user-attachments/assets/a8e90c83-6960-4d90-8c16-f9ba6fd8ea71" />
 <img width="1054" height="653" alt="screen 2" src="https://github.com/user-attachments/assets/fbe2bfc5-e16c-4492-8875-db00378b1094" />
 
-
-
 ## 🔧 System Features
 
 ### 🚦 Traffic Light Control
@@ -26,8 +24,6 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 ### 🌡️ Environmental Monitoring
 * A DHT11 temperature sensor is integrated to monitor ambient environmental conditions.
 * Real-time temperature readings are displayed on the FPGA's 7-segment display, while an LCD display provides additional feedback on system status.
-
-
 
 ## 🔌 Hardware Components Required
 * BASYS3 FPGA board
@@ -56,4 +52,3 @@ The project architecture is divided into modular VHDL components:
 * Mohamed Mohsen Abu Ayyad
 * Hamza Sherif Mansour
 * Ahmed Hossam Badran
-
