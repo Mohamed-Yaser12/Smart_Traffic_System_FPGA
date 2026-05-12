@@ -26,8 +26,7 @@ This project is a Smart Traffic Management System developed using VHDL and imple
 * Real-time temperature readings are displayed on the FPGA's 7-segment display, while an LCD display provides additional feedback on system status.
 
 ## 🔌 Hardware Components Required
-* BASYS3 FPGA board
-  <img width="431" height="498" alt="Screenshot 2026-05-11 130005" src="https://github.com/user-attachments/assets/c3643406-ed67-4fdc-9958-6fce822bf1c2" />
+* BASYS3 FPGA board<br><img width="250" alt="Screenshot 2026-05-11 130005" src="https://github.com/user-attachments/assets/c3643406-ed67-4fdc-9958-6fce822bf1c2" />
 * 4x Ultrasonic sensors (HC-SR04)
 * DHT11 temperature sensor
 * 220V red/yellow/green LEDs (8 each)
